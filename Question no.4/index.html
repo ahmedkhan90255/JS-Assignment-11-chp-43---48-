@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Question no.4</title>
-</head>
-<body>
-    <h1>Display an image in browser. Change the picture on mouseover and set the
-        first picture on mouseout.</h1>
+  </head>
+  <style>
+    body {
+      background-color: yellow;
+      color: darkorchid;
+      font-family: sans-serif;
+    }
+  </style>
 
-        <script>
-            function lightImg(newSrc) {
-                document.getElementById("image").src = newSrc;
-            }
-            function darkImg (){
-                document.getElementById("image").src = "darkImg.jpg"
-            }
-        </script>
-        <div>
-            <img id="image" src="./darkImg.jpg"  onmouseover="lightImg('lightImg.jpg')" onmouseout="darkImg()" alt="Dark" height="60%" width="70%" ">
-        </div>
-</body>
+  <body>
+    <h1>
+      Display an image in browser. Change the picture on mouseover and set the
+      first picture on mouseout.
+    </h1>
+
+    <script>
+      function lightImg(newSrc) {
+        document.getElementById("image").src = newSrc;
+      }
+      function darkImg() {
+        document.getElementById("image").src = "darkImg.jpg";
+      }
+    </script>
+    <div>
+      <img id="image" src="./darkImg.jpg" onmouseover="lightImg('lightImg.jpg')"
+      onmouseout="darkImg()" alt="Dark" height="60%" width="70%" ">
+    </div>
+  </body>
 </html>

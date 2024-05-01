@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 5</title>
+  </head>
+  <style>
+    body {
+      background-color: lightblue;
+      color: darkred;
+      font-family: sans-serif;
+    }
+  </style>
+  <body>
+    <h1>
+      Show a counter in browser. Counter should increase on click on increase
+      button and decrease on click on decrease button. And show updated counter
+      value in browser.
+    </h1>
+    <h2>Counter:</h2>
+    <p id="counter">0</p>
+
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrease</button>
+
+    <script>
+      var counterValue = 0;
+      var counterElement = document.getElementById("counter");
+
+      function increaseCounter() {
+        counterValue++;
+        updateCounter();
+      }
+
+      function decreaseCounter() {
+        if (counterValue > 0) {
+          counterValue--;
+          updateCounter();
+        }
+      }
+
+      function updateCounter() {
+        counterElement.textContent = counterValue;
+      }
+    </script>
+  </body>
+</html>
