@@ -1,0 +1,13 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: cadetblue;
+    color: rgb(27, 67, 187);
+}
+
+#div1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
