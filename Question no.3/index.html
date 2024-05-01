@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question no.3</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+      color: blueviolet;
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <h1>
+      Display 10 student records in table and each row should contain a delete
+      button. If you click on a button to delete a record, entire row should be
+      deleted.
+    </h1>
+    <script>
+      function SomeDeleteRowFunction(o) {
+        //no clue what to put here?
+        var p = o.parentNode.parentNode;
+        p.parentNode.removeChild(p);
+      }
+    </script>
+
+    <table>
+      <tr>
+        <td>Index</td>
+        <td>Name</td>
+        <td>Class</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>Ahmed</td>
+        <td>12</td>
+        <td>
+          <input
+            type="button"
+            value="Delete Row"
+            onclick="SomeDeleteRowFunction(this)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Shahzaib</td>
+        <td>11</td>
+        <td>
+          <input
+            type="button"
+            value="Delete Row"
+            onclick="SomeDeleteRowFunction(this)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Abrar</td>
+        <td>10</td>
+        <td>
+          <input
+            type="button"
+            value="Delete Row"
+            onclick="SomeDeleteRowFunction(this)"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
